@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:wght@100..900&family=Jolly+Lodger&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F6FAFD];
+  }
+}
+
+.active {
+  @apply bg-blue-100 border-r-2 border-blue-500 text-blue-500;
+}
+
+.active-pagination{
+  @apply bg-[#0270AF] text-white;
+}
