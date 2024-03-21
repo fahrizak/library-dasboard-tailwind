@@ -6,7 +6,7 @@ const Table = ({books}) => {
 
 
     return (
-        <table className="book__table w-full border-collapse">
+        <table className=" w-full border-collapse">
             <thead>
                 <tr>
                     <th className="border-t border-b border-gray-300 p-3 text-left">Judul Buku</th>

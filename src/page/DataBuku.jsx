@@ -49,22 +49,22 @@ const DataBuku = () => {
 
 
   return (
-    <section className="book__container lg:pl-[310px] lg:pt-24 mb-14 overflow-y-auto px-6 pt-[4.5rem]">
+    <section className=" lg:pl-[310px] lg:pt-24 mb-14 overflow-y-auto px-6 pt-[4.5rem]">
 
-      <div className="book__flex flex justify-between items-center">
-        <h2 className="page__title text-gray-500 font-semibold text-xl mb-4">Data Buku</h2>
+      <div className=" flex justify-between items-center">
+        <h2 className="  text-gray-500 font-semibold text-xl mb-4">Data Buku</h2>
         <AddModal />
       </div>
 
-      <div className="book__content bg-white w-full overflow-x-auto rounded-lg border border-gray-300">
-        <div className="book__header flex justify-between items-center p-4">
-          <div className="book__limit">
+      <div className=" bg-white w-full overflow-x-auto rounded-lg border border-gray-300">
+        <div className="flex justify-between items-center p-4">
+          <div className="">
             <SelectLimit onLimitChange={setLimit} limit={limit} />
           </div>
 
-          <div className="book__search relative">
-            <input type="text" placeholder="Search ..." onChange={(e) => setSearch(e.target.value)} className="search__input rounded-lg px-3 py-1 border border-gray-300 w-[140px]" />
-            <i className="ri-search-line search__icon absolute right-3 top-[6px] text-base text-gray-500"></i>
+          <div className=" relative">
+            <input type="text" placeholder="Search ..." onChange={(e) => setSearch(e.target.value)} className=" rounded-lg px-3 py-1 border border-gray-300 w-[140px]" />
+            <i className="ri-search-line absolute right-3 top-[6px] text-base text-gray-500"></i>
           </div>
         </div>
 

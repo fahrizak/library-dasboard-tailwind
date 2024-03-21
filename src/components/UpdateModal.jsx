@@ -36,13 +36,13 @@ const UpdateModal = () => {
 
 
             {modal && (
-                <div className="modal fixed inset-0 z-50 grid place-items-center">
-                    <div onClick={toggleModal} className="overlay fixed inset-0 z-50 bg-[rgba(49,49,49,0.5)]"></div>
+                <div className=" fixed inset-0 z-50 grid place-items-center">
+                    <div onClick={toggleModal} className=" fixed inset-0 z-50 bg-[rgba(49,49,49,0.5)]"></div>
 
-                    <div className="modal__content form__modal absolute lg:w-[510px] bg-white px-7 py-3.5 rounded-lg w-[300px] grid z-50">
-                        <h2 className="modal__edit-title text-black mb-6 cursor-pointer text-2xl">Edit Data Buku</h2>
+                    <div className=" absolute lg:w-[510px] bg-white px-7 py-3.5 rounded-lg w-[300px] grid z-50">
+                        <h2 className=" text-black mb-6 cursor-pointer text-2xl">Edit Data Buku</h2>
 
-                        <div className="form__edit">
+                        <div>
                             <form onSubmit={handleSubmit}>
                                 <label id="judul">Judul Buku <span className="text-red-600">*</span></label>
                                 <input type="text" htmlFor="judul"
@@ -63,9 +63,9 @@ const UpdateModal = () => {
                                     className="w-full px-5 py-3 mb-4 mt-2 inline-block border border-gray-400 rounded-lg"/>
 
 
-                                <div className="modal__edit-button form-button flex justify-between mt-4">
-                                    <div onClick={toggleModal} className="modal__delete-no form__batalkan px-4 py-2 rounded-lg shadow-md text-[#0270AF] font-semibold cursor-pointer">Batalkan</div>
-                                    <button type="submit" style={{ backgroundColor: isFormValid() ? '#0270AF' : 'lightgray' }} className="modal__submit form__submitborder-0 px-4 py-2 rounded-lg shadow-md text-white bg-[#0270AF] font-semibold">Edit</button>
+                                <div className=" flex justify-between mt-4">
+                                    <div onClick={toggleModal} className=" px-4 py-2 rounded-lg shadow-md text-[#0270AF] font-semibold cursor-pointer">Batalkan</div>
+                                    <button type="submit" style={{ backgroundColor: isFormValid() ? '#0270AF' : 'lightgray' }} className="border-0 px-4 py-2 rounded-lg shadow-md text-white bg-[#0270AF] font-semibold">Edit</button>
                                 </div>
 
                             </form>
